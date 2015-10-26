@@ -1,0 +1,41 @@
+<btn>
+   <a href="javascript:;"
+     onclick={ push }
+     class="weui_btn   { opts.color ? 'weui_btn_'+opts.color : 'weui_btn_default' } {weui_btn_disabled: disabled }">
+     <yield/>
+   </a>
+
+
+
+  <script>
+    this.disabled = undefined
+
+    culculateProperties (e) {
+      this.disabled =
+        opts.hasOwnProperty('__disabled') ? opts.__disabled === true :
+        opts.hasOwnProperty('disabled') ? opts.disabled === '' || opts.disabled === 'disabled':
+        false
+    }
+    push (e) {
+      if (this.disabled) return
+      if (opts.href) {
+        e.preventUpdate = true
+        location.href = opts.href
+        return
+      }
+      if (opts.onpush){
+        e.preventUpdate = true
+        opts.onpush(e)
+        this.updateCaller(opts.onpush)
+      }
+    }
+
+    this.on('update', this.culculateProperties)
+    this.mixin('parentScope')
+  </script>
+
+  <style scoped>
+
+  </style>
+
+</btn>

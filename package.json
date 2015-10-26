@@ -1,0 +1,37 @@
+{
+  "name": "riot-weui",
+  "version": "0.0.1",
+  "description": "weui for Riot.js",
+  "homepage": "https://github.com/cognitom/riot-weui",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cognitom/riot-weui.git"
+  },
+  "author": "FrankLee <lifei800@qq.com>",
+  "license": "MIT",
+  "keywords": [
+    "riot",
+    "riotcomponent",
+    "component",
+    "weui"
+  ],
+  "devDependencies": {
+    "browser-sync": "^2.8.2",
+    "coffee-script": "^1.9.3",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-shell": "^0.4.2",
+    "gulp-uglify": "^1.3.0",
+    "gulp-wrap": "^0.11.0",
+    "map-stream": "0.0.6",
+    "riot": "^2.2.4",
+    "run-sequence": "^1.1.2",
+    "weui":"0.2.0"
+  },
+  "main": "dist/riot-weui.js",
+  "scripts": {
+    "build": "gulp",
+    "start": "gulp watch"
+  }
+}

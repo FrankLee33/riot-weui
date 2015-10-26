@@ -1,0 +1,8 @@
+riot.tag('app-btn', '<h2>Buttons</h2> <div class="phone"> <btn>Active</btn> <btn disabled>Disabled</btn> <btn color="warn">Warn</btn> <btn color="primary">Primary</btn> </div>', 'app-btn .phone, [riot-tag="app-btn"] .phone{ width:200px; }', function(opts) {
+
+});
+
+riot.tag('app', '<header> <h1>Riot WEUI</h1> <h2>WEUI Components for Riot.js</h2> <p>CURRENTLY EXPERIMENTAL</p> </header> <article> <h2>Getting started</h2> <p><a href="https://github.com/franklee33/riot-weui">See our repo</a> on GitHub.</p> </article> <app-btn></app-btn> <footer> <p> Maintained by <a href="https://github.com/franklee33">@franklee33</a> with the help of our contributors.<br> Code licensed under MIT, documentation under CC BY 3.0 </p> </footer>', 'app, [riot-tag="app"]{ display: block; } app code, [riot-tag="app"] code{ font-family: Menlo, Monaco, Consolas, "Courier New", monospace; } app code, [riot-tag="app"] code{ padding: 2px 4px; font-size: 90%; color: #c7254e; background-color: #f9f2f4; border-radius: 4px; } app header, [riot-tag="app"] header{ background: #333; color: white; padding: 2em; } app > *:not(header):not(footer), [riot-tag="app"] > *:not(header):not(footer){ padding: 2em; border-bottom: 1px solid #eee; } app h2, [riot-tag="app"] h2{ margin: 0; } app section, [riot-tag="app"] section{ border: 1px solid #ddd; padding: 1em; border-top-left-radius: .25em; border-top-right-radius: .25em; } app section + highlight, [riot-tag="app"] section + highlight{ border-top: none; border-top-left-radius: 0; border-top-right-radius: 0; } app section p.comment, [riot-tag="app"] section p.comment{ margin: .5em 0 0; color: #999; font-size: 95%; } app footer, [riot-tag="app"] footer{ font-size: 90%; line-height: 1.4em; color: #999; padding: 2em; }', function(opts) {
+
+
+});
